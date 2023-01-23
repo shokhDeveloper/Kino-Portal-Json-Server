@@ -1,0 +1,12 @@
+{
+  "posts": [],
+  "users": [
+    {
+      "email": "shohijahonmusinkulov@gmail.com",
+      "password": "$2a$10$0UVbCwVPTlEDW52ogfpIsO3yIpDut6XqN9NLOKbwLINMNdkvWY6R.",
+      "firstname": "Shohijahon",
+      "lastname": "Musinkulov",
+      "id": 1
+    }
+  ]
+}

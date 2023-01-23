@@ -1,0 +1,42 @@
+.movie{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.movie_card{
+    width: 25%;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+}
+.movie_card img{
+    width: 300px;
+    border-radius: 10px;
+}
+.movie_card h2{
+    font-size: 30px;
+}
+.movie_card h4{
+    padding-top: 1rem;
+    color: crimson;
+}
+.parent_movie{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.movie_text{
+    width: 50%;
+    margin: 0 auto;    
+    color: #fff;
+}
+.movie_text h2{
+    font-size: 35px;
+    padding-bottom: 1rem;
+}
+.movie_text p{
+    font-size: 25px;
+    line-height: 40px;
+}

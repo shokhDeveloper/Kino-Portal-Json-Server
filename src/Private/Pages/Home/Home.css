@@ -1,0 +1,17 @@
+.home_page{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.home_page h1{
+    font-size: 40px;
+    color: crimson;
+    padding: 0.2rem;
+}
+.home_page_films{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+}

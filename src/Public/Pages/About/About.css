@@ -1,0 +1,30 @@
+.about{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}
+.about_align{
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+.about_align img{
+    width: 700px;
+    height: 500px;
+    border-radius: 30px;
+}
+.about_align .about__text{
+    color: #fff;
+}
+.about_align h2{
+    font-size: 35px;
+}
+.about_align p{
+    padding-top: 2rem;
+    line-height: 30px;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+.about_align a{
+    font-size: 22px;
+}

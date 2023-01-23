@@ -1,0 +1,32 @@
+header{
+    width: 100%;
+    height: auto;
+    background: black;
+    position: fixed;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border-bottom: 1px solid grey;
+}
+.logo{
+    text-decoration: none;
+    color: #fff;
+    font-size: 40px;
+}
+.nav__ul{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.text{
+    text-decoration: underline;
+    color: crimson;
+}
+.nones{
+    text-decoration: none;
+}

@@ -1,0 +1,13 @@
+.nav{
+    padding: 1rem;
+}
+.header_input{
+    padding: 0.2rem 1rem;
+    border: 1px solid transparent;
+    outline: 2px solid transparent;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+.header_input:focus{
+    outline: 2px solid rgba(220, 20, 60, 0.626);
+}

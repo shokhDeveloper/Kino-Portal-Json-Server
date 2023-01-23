@@ -1,0 +1,22 @@
+.card{
+    width: 25%;   
+    margin: 0 auto;
+    /* border: 1px solid #fff; */
+    margin: 0.5rem;
+    text-decoration: none
+}
+.card img{
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+.card h2{
+    font-size: 27px;
+    color: #fff;
+}
+.card h4{
+    font-size: 18px;
+    padding-top: 1rem;
+    color: crimson;
+}
