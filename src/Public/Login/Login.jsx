@@ -2,15 +2,38 @@ import "./Login.css"
 import { Container } from "../../Container"
 import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
 import { useContext, useRef, useState } from "react";
-import { NavLink } from "react-router-dom";
-import Context from "@mui/base/TabsUnstyled/TabsContext";
+import { NavLink, useNavigate } from "react-router-dom";
+import { Context } from "../../Context/Context";
+import axios from "axios";
 export const Login = () => {
     const [type, setType] = useState(!true)
-    const {token} = useContext(Context)
+    const {token, setToken, setUser} = useContext(Context)
+    const navigator = useNavigate() 
+    const handleSub = async (event) => {
+        event.preventDefault()
+        const data = new FormData(event.target)
+        const jsons = await axios({
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            data: {email: data.get("email"), password: data.get("password")},
+            url: "http://localhost:8888/login"
+        })
+        const response = await jsons.data
+        if(response){
+            const {accessToken, user} = response
+            if(accessToken !== undefined){
+                setToken(accessToken)
+                setUser(user)   
+                navigator("/")
+            }
+        }
+    }
     return(
         <div className="login" style={{display: token !== null? "none": "flex" }}>
             <Container>
-                <form>
+                <form onSubmit={handleSub}>
                     <h1>Login</h1>
                     <label htmlFor="email">
                         <input type="email" name="email" id="email" />

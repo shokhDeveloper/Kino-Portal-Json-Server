@@ -7,6 +7,13 @@
       "firstname": "Shohijahon",
       "lastname": "Musinkulov",
       "id": 1
+    },
+    {
+      "email": "sevinchmusinkulova@gmail.com",
+      "password": "$2a$10$C5rbE1L8Fgnx1xA1tBGHreuKeWiSpHhcvf1ndBnU2VVRwF3b4mSE2",
+      "firstname": "Sevinch",
+      "lastname": "Musinkulova",
+      "id": 2
     }
   ]
 }

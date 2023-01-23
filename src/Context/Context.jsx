@@ -14,8 +14,10 @@ export const ContextProvider = ({children}) => {
     let parses_user = window.localStorage.getItem("user_kino")
     const [user, setUser] = useState(parses_user !==null? JSON.parse(parses_user): null)
     useEffect(() => {
-        window.localStorage.setItem("user_kino", JSON.stringify(user))   
-    })
+        if(user !== null){
+            window.localStorage.setItem("user_kino", JSON.stringify(user))   
+        }
+    },[user])
     const [popular, setPopular] = useState([])
     const [movie, setMovie] = useState([])
     const [actors, setActors] = useState([])
