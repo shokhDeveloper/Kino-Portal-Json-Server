@@ -25,4 +25,16 @@ export const Api = {
             api_key
         }
     }),
+    getRecomindation: (id) => axios.get(`${BASE_URL}/movie/upcoming`,{
+        params:{
+            api_key,
+            page: id
+        }
+    }),
+    getRating: (id) => axios.get(`${BASE_URL}/movie/top_rated`,{
+        params: {
+            api_key,
+            page: id
+        }
+    })
 }

@@ -11,3 +11,28 @@
 .header_input:focus{
     outline: 2px solid rgba(220, 20, 60, 0.626);
 }
+.drop{
+    position: relative;
+}
+.dropdown{
+    padding: 0.5rem 1rem;
+    font-size: 17px;
+    background: rgba(220, 20, 60, 0.626);
+    color: #000;
+}
+.drop .dropdown_menu{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    background: #fff;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.dropdown_menu a{
+    color: #000;
+    text-decoration: none;
+    padding: 0.5rem 0rem;
+    border-bottom: 1px solid black;
+    font-size: 17px;
+}

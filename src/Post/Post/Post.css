@@ -1,0 +1,45 @@
+.post{
+    width: 100%;
+    height: auto;
+    color: #fff;
+    padding: 1rem;
+}
+.post__title{
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0rem;
+}
+.post__title h2{
+    font-size: 35px;
+}
+.post__btn{
+    margin-top: 4rem;
+    padding: 0.5rem 1rem;
+    background: rgba(220, 20, 60, 0.626);
+    font-size: 20px;
+}
+.allposts_card{
+    width: 30%;
+    background: #fff;
+    color: crimson;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.allposts_card h4{
+    color: #000;
+    font-size: 20px;
+    padding-top: 1rem;
+}
+.allposts_card h3{
+    text-align: center;
+    color: #000;
+    font-size: 30px;
+}
+.allposts_parent{
+    color: #fff;
+}
+.allposts_parent h1{
+    text-align: center;
+    padding: 1rem;
+}

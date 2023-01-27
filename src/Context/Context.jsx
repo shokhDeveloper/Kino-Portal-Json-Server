@@ -25,8 +25,17 @@ export const ContextProvider = ({children}) => {
     const [activePage, setActivePage] = useState(1)
     const [searchName, setSearchName] = useState("man")
     const [searchResult, setSearchResult] = useState([])
+    const [recomindations, setRecomindations] = useState([])
+    const [rating, setRating] = useState([])
+    let parses_posts = window.localStorage.getItem("posts_kino")
+    const [posts, setPosts] = useState(parses_posts !== null? JSON.parse(parses_posts): null)
+    useEffect(() => {
+        if(posts !== null){
+            window.localStorage.setItem("posts_kino", JSON.stringify(posts))
+        }
+    },[posts])
     return(
-        <Context.Provider value={{actors, setActors, searchName, setSearchName, activePage, setActivePage, movie, setMovie, popular, setPopular, token, setToken, user, setUser, userActor, setUserActor, searchResult, setSearchResult}}>
+        <Context.Provider value={{posts, setPosts, rating, setRating, recomindations, setRecomindations , actors, setActors, searchName, setSearchName, activePage, setActivePage, movie, setMovie, popular, setPopular, token, setToken, user, setUser, userActor, setUserActor, searchResult, setSearchResult}}>
             {children}
         </Context.Provider>
     )

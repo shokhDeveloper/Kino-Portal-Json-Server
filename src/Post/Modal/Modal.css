@@ -1,0 +1,35 @@
+.modal form{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+.modal h3{
+    padding: 1rem 0rem;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    text-decoration: underline;
+} 
+.modal form input{
+    border: 1px solid black;
+    width: 60%;
+}
+.modal form label{
+    color: #000;
+}
+
+.modal form input:focus{
+    border: 1px solid transparent;
+}
+.modal {
+    text-align: center;
+}
+.modal button{
+    padding: 0.5rem 1rem;
+    font-size: 18px;
+    border: 1px solid transparent;
+    background: crimson;
+    color: #000;
+}

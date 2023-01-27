@@ -6,6 +6,9 @@ import { Register } from "./Public/Register";
 import { useContext } from "react";
 import { Context } from "./Context/Context";
 import {Home} from "./Private"
+import { Post } from "./Post";
+import { AllPosts } from "./Post/AllPosts";
+// import { Posts_user } from "./Private/Post_user";
 function App() {
   const {token} = useContext(Context)
   return (
@@ -14,6 +17,13 @@ function App() {
         <Route path="/*" element={token !== null? <Home/>: <Not/>}/>
         <Route path="/login" element={<Login/>}/>
         <Route path="/register" element={<Register/>}/>
+        {token !== null?
+         <>
+         <Route path="/post" element={<Post/>}/>
+         <Route path="/posts" element={<AllPosts/>}/>
+          </>
+         :false}
+      
       </Routes>
     </div>
   );

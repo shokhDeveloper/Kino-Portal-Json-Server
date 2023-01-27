@@ -1,5 +1,22 @@
 {
-  "posts": [],
+  "posts": [
+    {
+      "title": "Author ",
+      "body": "tomonidan",
+      "date": "27.01.2023-20:58 Create-At",
+      "user_id": 1,
+      "author": "Shohijahon Musinkulov",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "title": "King",
+      "body": "Project",
+      "date": "27.01.2023NaN21:05 Create-At",
+      "user_id": 5,
+      "author": "Lionel Messi"
+    }
+  ],
   "users": [
     {
       "email": "shohijahonmusinkulov@gmail.com",
@@ -14,6 +31,27 @@
       "firstname": "Sevinch",
       "lastname": "Musinkulova",
       "id": 2
+    },
+    {
+      "email": "barchinakasimova@gmail.com",
+      "password": "$2a$10$qKnjPxNca7QN1s7QejZ.8uafsdm1Cg8q/WVmaLKFWC0aNAkdULXxC",
+      "firstname": "Barchina",
+      "lastname": "Kasimova",
+      "id": 3
+    },
+    {
+      "email": "nozanin@gmail.com",
+      "password": "$2a$10$z6g5hhzzXIKVbUEpi7pW8OSkpUtIQwW/AFutftY95i3bqstatHrHO",
+      "firstname": "Nozanin",
+      "lastname": "Musinkulovs",
+      "id": 4
+    },
+    {
+      "email": "lionelmessi@gmail.com",
+      "password": "$2a$10$u1/qTWvXx4Zwq8dfEEt20OmCWZz1oHllN0DuqlBDc7RsgtQ03X9he",
+      "firstname": "Lionel",
+      "lastname": "Messi",
+      "id": 5
     }
   ]
 }

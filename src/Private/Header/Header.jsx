@@ -7,12 +7,15 @@ import { Movie } from "../Pages/Movie"
 import { Actors } from "../Pages/Actors"
 import { User } from "../Pages/User"
 import { Search } from "../Pages/Search"
-import { useContext } from "react"
+import { useContext, useState } from "react"
 import { Context } from "../../Context/Context"
-
+import { Home } from "../../Teatr"
+import { Home as Rating } from "../../Rating"
+import LogoutIcon from '@mui/icons-material/Logout';
 export const Header = () => {
     const navigator = useNavigate()
-    const {setSearchName} = useContext(Context)
+    let [display, setDisplay] = useState(!true)
+    const {setSearchName, setToken} = useContext(Context)
     const handleChange = (event) => {
         if(event.target.value.length >= 1){
             navigator("/search")
@@ -37,10 +40,23 @@ export const Header = () => {
                             <NavLink className={(params) => params.isActive? "text": "nones"}  to={"teatr"}>Teatrlarda</NavLink>
                         </li>
                         <li>
-                            <NavLink className={(params) => params.isActive? "text": "nones"}  to={"rating"}>Xit kinolar</NavLink>
+                            <NavLink className={(params) => params.isActive? "text": "nones"}  to={"rating"}>Rating</NavLink>
                         </li>
                     </ul>
                     <input type="text" onChange={handleChange} placeholder="Search" className="header_input" />
+                    <div className="drop">
+                    <button className="dropdown" onClick={() => setDisplay(!display)}>Sozlamalar</button>
+                    <div className="dropdown_menu" style={{display: display === true? "flex": "none"}}>
+                        <NavLink onClick={() =>{
+                             setDisplay(!display)
+                             setToken(null)
+                             window.localStorage.clear()
+                            
+
+                        }}> <LogoutIcon style={{fontSize: "17px"}}/> Chiqish</NavLink>
+                        <NavLink to={"/post"} onClick={() => setDisplay(!display)}>Post</NavLink>
+                    </div>
+                    </div>
                 </nav>
             </Container>
         </header>
@@ -48,6 +64,8 @@ export const Header = () => {
             <section>
             <Routes>
                 <Route index element={<PageHome/>}/> 
+                <Route path="/teatr" element={<Home/>}/>
+                <Route path="/rating" element={<Rating/>}/>
                 <Route path="/movie/:id" element={<Movie/>}/>
                 <Route path="/actors/:id" element={<Actors/>}/>
                 <Route path="/actor/:id" element={<User/>}/>
