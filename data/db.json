@@ -52,6 +52,13 @@
       "firstname": "Lionel",
       "lastname": "Messi",
       "id": 5
+    },
+    {
+      "email": "dostonqudratov@gmail.com",
+      "password": "$2a$10$/WyuoLM5xy5lU8Z31O2CLuYSCLK62i7BHBxnpMzTKqwY5y1WZNHbS",
+      "firstname": "Doston",
+      "lastname": "Qudratov",
+      "id": 6
     }
   ]
 }
